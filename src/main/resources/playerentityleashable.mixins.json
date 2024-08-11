@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "fr.shabawski.playerentityleashable.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"CollectLeashableMixin",
+		"PlayerEntityLeashable"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

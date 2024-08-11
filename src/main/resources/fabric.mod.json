@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "playerentityleashable",
+	"version": "${version}",
+	"name": "PlayerEntityLeashable",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/playerentityleashable/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fr.shabawski.playerentityleashable.PlayerEntityLeashable"
+		],
+		"client": [
+			"fr.shabawski.playerentityleashable.PlayerEntityLeashableClient"
+		]
+	},
+	"mixins": [
+		"playerentityleashable.mixins.json",
+		{
+			"config": "playerentityleashable.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
